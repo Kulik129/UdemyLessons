@@ -14,7 +14,7 @@ public class StudentTest {
         }
     }
 
-      static void method2(Student student1, Student student2){
+    static void method2(Student student1, Student student2){
         method1(student1,student2);
         if (student1.name.equals(student2.name)){
             if (student1.course == student2.course){
