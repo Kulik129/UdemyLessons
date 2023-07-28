@@ -2,7 +2,7 @@ package org.example.lesson14;
 
 public class Example {
     public static void main(String[] args) {
-        method();
+        printTime();
     }
 
     public static void method() {
@@ -23,4 +23,20 @@ public class Example {
             }
         }
     }
+    public static void printTime() {
+        for (int hour = 0; hour <= 6; hour++) {
+            for (int minute = 0; minute < 60; minute++) {
+                for (int second = 0; second < 60; second++) {
+                    if (hour > 1 && minute % 10 == 0) {
+                        return; // прекратить выполнение метода, если час > 1 и минута кратна 10
+                    }
+                    if (second * hour > minute) {
+                        break; // выйти из внутреннего цикла, если секунда * час > минута
+                    }
+                    System.out.printf("%02d:%02d:%02d\n", hour, minute, second);
+                }
+            }
+        }
+    }
+
 }
