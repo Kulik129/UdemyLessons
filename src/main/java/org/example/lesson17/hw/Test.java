@@ -17,7 +17,6 @@ public class Test {
                 answer = false;
             }
         }
-
         return answer;
     }
 }
