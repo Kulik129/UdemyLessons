@@ -1,14 +1,15 @@
-package org.example.lesson22;
+package org.example.lesson23;
 
-public class Test3 {
+public class Test {
     public static void main(String[] args) {
         Dok dok = new Dok();
-        dok.name = "Ivan";
-        dok.age = 23;
-        dok.lechit();
+        Teacher teacher = new Teacher();
 
+        // Teacher teacher1 = new Employ(); // так не работает
+        Employ teacher2 = new Teacher();  // Переменная супер класса может ссылка на объект саб класса но не наоборот
     }
 }
+
 
 class Employ {
     String name;
@@ -38,4 +39,3 @@ class Teacher extends Employ {
         System.out.println("Учу");
     }
 }
-
