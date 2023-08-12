@@ -19,6 +19,7 @@ class Employ {
 
 class Teacher extends Employy {
     String name;
+
     void eat() {
         System.out.println("Учитель поел вкусную гречу");
     }
@@ -27,12 +28,14 @@ class Teacher extends Employy {
 ---
 * Return type в sub классе такое же как и в parent классе или же return type  в sub классе - это sub класс return type из parent класса
 ```java
-class Meal{
-    
+class Meal {
+
 }
+
 class Fruits extends Meal {
-    
+
 }
+
 class Employ {
     String name;
     int age;
@@ -47,6 +50,7 @@ class Employ {
 
 class Teacher extends Employy {
     String name;
+
     Fruits eat() {
         System.out.println("Учитель поел вкусную гречу");
         Fruits fruits = new Fruits();
