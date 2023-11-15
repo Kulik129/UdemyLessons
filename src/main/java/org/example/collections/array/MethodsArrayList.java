@@ -11,10 +11,10 @@ public class MethodsArrayList {
     }
 
     private static List<Integer> methods5() {
-        List<Integer> integers = List.of(3,8,13); // Созданный лист таким образом не изменить, выйдет ошибка. Не могут содержать null.
+        List<Integer> integers = List.of(3,8,13); // Созданный лист таким образом не изменить, выйдет ошибка. Не могут содержать null
         System.out.println(integers);
 
-        List<Integer> list = List.copyOf(integers); // Копируем лист. Его так не модифицировать. Не могут содержать null.
+        List<Integer> list = List.copyOf(integers); // Копируем лист. Его так не модифицировать. Не могут содержать null
         System.out.println(list);
 
         return integers;
