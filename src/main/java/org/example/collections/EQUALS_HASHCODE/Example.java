@@ -34,9 +34,15 @@ public class Example {
         System.out.println(student2.hashCode());
         System.out.println(student3.hashCode());
         System.out.println(student4.hashCode());
+
+        // Перебирает мапу
+        System.out.println();
+        for (Map.Entry<Student, Double> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ":" + entry.getValue());
+        }
     }
 
-    public static class Student {
+    public static class Student  implements  Comparable<Student>{
         String name;
         String surname;
         int course;
@@ -68,6 +74,12 @@ public class Example {
         @Override
         public int hashCode() {
             return Objects.hash(name, surname, course);
+        }
+
+        // Переопределили по имени
+        @Override
+        public int compareTo(Student o) {
+            return this.name.compareTo(o.name);
         }
     }
 }
