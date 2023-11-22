@@ -30,16 +30,3 @@
 
 ### _*<code>[Полиморфизм](https://github.com/Kulik129/UdemyLessons/blob/master/src/main/java/org/example/core/lesson25/polimorfizm.md)</code>*_
 
-<code>[Здесь могла бы быть ваша реклама]()</code>
-
-<code>[            ]()</code>
-
-<code>[           ]()</code>
-
-<code>[          ]()</code>
-
-<code>[         ]()</code>
-
-<code>[        ]()</code>
-
-<code>[       ]()</code>
