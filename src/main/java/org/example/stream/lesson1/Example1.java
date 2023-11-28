@@ -25,49 +25,49 @@ public class Example1 {
         List<String> names = Arrays.asList("John", "Jane", "Doe", "Alice");
 
         // Фильтрация и вывод имен, начинающихся с D
-        System.out.println(ANSI_GREEN+"\n--- Фильтрация и вывод имен, начинающихся с \"D\" ---"+ANSI_RESET);
+        System.out.println(ANSI_GREEN + "\n--- Фильтрация и вывод имен, начинающихся с \"D\" ---" + ANSI_RESET);
         names.stream()
                 .filter(n -> n.startsWith("D"))
                 .forEach(System.out::println);
 
         // Преобразование имен в верхний регистр и вывод
-        System.out.println(ANSI_GREEN+"\n--- Преобразование имен в верхний регистр и вывод ---"+ANSI_RESET);
+        System.out.println(ANSI_GREEN + "\n--- Преобразование имен в верхний регистр и вывод ---" + ANSI_RESET);
         names.stream()
                 .map(String::toUpperCase)
                 .forEach(System.out::println);
 
         // Сортировка и вывод имен в алфавитном порядке
-        System.out.println(ANSI_GREEN+"\n--- Сортировка и вывод имен в алфавитном порядке ---"+ANSI_RESET);
+        System.out.println(ANSI_GREEN + "\n--- Сортировка и вывод имен в алфавитном порядке ---" + ANSI_RESET);
         names.stream()
                 .sorted()
                 .forEach(System.out::println);
 
         // Вывод имен, содержащих букву e
-        System.out.println(ANSI_GREEN+"\n--- Вывод имен, содержащих букву \"e\" ---"+ANSI_RESET);
+        System.out.println(ANSI_GREEN + "\n--- Вывод имен, содержащих букву \"e\" ---" + ANSI_RESET);
         names.stream()
                 .filter(name -> name.contains("e"))
                 .forEach(System.out::println);
 
         // Группировка имен по первой букве
-        System.out.println(ANSI_GREEN+"\n--- Группировка имен по первой букве ---"+ANSI_RESET);
+        System.out.println(ANSI_GREEN + "\n--- Группировка имен по первой букве ---" + ANSI_RESET);
         Map<Character, List<String>> groupedNames = names.stream()
                 .collect(Collectors.groupingBy(name -> name.charAt(0)));
 
         System.out.println("Grouped Names: " + groupedNames);
 
         // Сложение всех чисел
-        System.out.println(ANSI_GREEN+"\n--- Сложение всех чисел ---"+ANSI_RESET);
+        System.out.println(ANSI_GREEN + "\n--- Сложение всех чисел ---" + ANSI_RESET);
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
         int sum = numbers.stream()
                 .reduce(0, Integer::sum);
         System.out.println("Sum: " + sum);
 
-        System.out.println(ANSI_GREEN+"\n--- Преобразование имен в нижний регистр и вывод ---"+ANSI_RESET);
+        System.out.println(ANSI_GREEN + "\n--- Преобразование имен в нижний регистр и вывод ---" + ANSI_RESET);
         names.stream()
                 .map(name -> name.toLowerCase())
                 .forEach(System.out::println);
 
-        System.out.println(ANSI_GREEN+"\n--- Вывод имен, содержащих букву \"e\" разными цветами ---"+ANSI_RESET);
+        System.out.println(ANSI_GREEN + "\n--- Вывод имен, содержащих букву \"e\" разными цветами ---" + ANSI_RESET);
         names.stream().filter(name -> name.contains("e")).forEach(name -> {
             if (name.startsWith("D")) {
                 System.out.println(ANSI_YELLOW + name + ANSI_RESET); // желтый цвет для имен, начинающихся с "J"
