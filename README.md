@@ -1,6 +1,6 @@
 <div id="header" align="center">
 <br>
-  <img src="https://media.giphy.com/media/LPZMkVxnXERA5h8BVJ/giphy.gif?cid=ecf05e4733n3qqhpjwz7mkqik2c6578b3uqvcie2cvu2uhbx&ep=v1_gifs_search&rid=giphy" width="100"/>
+  <img src="https://media.giphy.com/media/LPZMkVxnXERA5h8BVJ/giphy.gif?cid=ecf05e4733n3qqhpjwz7mkqik2c6578b3uqvcie2cvu2uhbx&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="120"/>
 <h1>Udemy Lessons</h1>
 </div>
 
